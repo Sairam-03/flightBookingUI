@@ -62,7 +62,7 @@ class User extends React.Component {
                 </input>
            </div>
            {/* <Link to='/userDetails'> */}
-           <button >Login</button>
+           <center><button align="Center">Login</button></center>
            {/* </Link> */}
           </form>
         </div>

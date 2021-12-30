@@ -36,29 +36,33 @@ class FetchTickets extends Component {
     render() {
         return(
             <div>
+                <center>
                 <h1>Ticket History</h1>
                 <form>
                     <label>pnr</label><br />
                     <input type="text"
                     value={this.state.pnr}
                     onChange={this.handlePnr}>
-                    </input><br />
+                    </input>
                 </form> 
+                
                     <button onClick={this.onClickHandler} >Fetch Ticket</button>
                     { this.state.showResults ?  
-                    <table cellpadding="5" cellspacing="5">
-                        <tr>
+                    <table><tr><br />
+
+                    <table border="1" cellPadding="2" cellSpacing="0"  align="center" border-collapse="collapse" border-color="black" border-multiline="0"> 
+                        <tr align="center" >
                             <th>PNR</th>
                             <th>Airline</th>
-                            <th>flightId</th>
-                            <th>onboardDateTime</th>
-                            <th>fromPlace</th>
-                            <th>toPlace</th>
-                            <th>emailId</th>
+                            <th>FlightId</th>
+                            <th>OnboardDateTime</th>
+                            <th>FromPlace</th>
+                            <th>ToPlace</th>
+                            <th>Email-Id</th>
                             <th>seatCount</th>
                         </tr>
-                        <tr>
-                            <td>{this.state.tickets.pnr}</td>
+                        <tr align="center">
+                            <td >{this.state.tickets.pnr}</td>
                             <td>{this.state.tickets.name}</td>
                             <td>{this.state.tickets.flightId}</td>
                             <td>{this.state.tickets.onboardDateTime}</td>
@@ -68,7 +72,10 @@ class FetchTickets extends Component {
                             <td>{this.state.tickets.seatCount}</td>
                         </tr>
                     </table>
+                    </tr>
+                    </table>
                     : null }
+                    </center>
             </div>
         );
     }

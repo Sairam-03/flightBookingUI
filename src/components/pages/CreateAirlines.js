@@ -95,6 +95,7 @@ class CreateAirlines extends Component {
     render() {
         return(
             <div>
+                <center>
                 <h1>Create Airline</h1>
                 <form>
                     <label>Airline</label><br />
@@ -155,6 +156,7 @@ class CreateAirlines extends Component {
 
                     <button onClick={this.onClickHandler} >Create Airline</button>
                 </form>
+                </center>
             </div>
             
 

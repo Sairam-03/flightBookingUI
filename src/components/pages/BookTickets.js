@@ -92,8 +92,10 @@ class BookTickets extends Component {
     render() {
         return(
             <div>
+                
+                <center>
                 <h1>Ticket Booking</h1>
-                <form>
+                <form> 
                     <label>Email</label><br />
                     <input type="text"
                     value={this.state.emailId}
@@ -146,6 +148,7 @@ class BookTickets extends Component {
                     </input><br />
                 </form>
                 <button onClick={this.onClickHandler}>Book Ticket</button>
+                </center>
             </div>
         );
     }

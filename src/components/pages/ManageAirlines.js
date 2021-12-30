@@ -40,6 +40,7 @@ class ManageAirlines extends Component {
     render() {
         return(
             <div>
+                <center>
                 <h1>Manage Airlines</h1>
                 <form>
                     <label>Airline</label><br />
@@ -59,6 +60,7 @@ class ManageAirlines extends Component {
                     
                 </form>
                 <button onClick={this.onClickHandler}>Modify Airline</button>
+                </center>
             </div>
             
 

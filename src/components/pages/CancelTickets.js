@@ -27,6 +27,7 @@ class CancelTickets extends Component {
     render() {
         return(
             <div>
+                <center>
                 <h1>Cancel Ticket</h1>
                 <form>
                     <label>pnr</label><br />
@@ -36,6 +37,7 @@ class CancelTickets extends Component {
                     </input><br />
                 </form> 
                 <button onClick={this.onClickHandler}>Cancel Ticket</button>
+                </center>
             </div>
         );
     }
